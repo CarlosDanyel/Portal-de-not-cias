@@ -1,0 +1,87 @@
+.noticias {
+    min-height: 100vh;
+    width: 100%;
+    background: $main-background;
+
+    .display {
+        @include display;
+        padding: 6rem 0;
+
+        ul {
+            display: flex;
+            gap: 4rem;
+            flex-direction: column;
+            max-width: 100%;
+
+            .containerLi {
+                width: 100%;
+                background-color: $li-background;
+                box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+                border-radius: 5px;
+                padding: 1.5rem;
+                display: flex;
+                flex-direction: column;
+                flex-wrap: wrap;
+                gap: 1rem;
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+                word-break: break-all;
+
+                .svg-li {
+                    width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 0.3rem;
+                    cursor: pointer;
+
+                    #icon {
+                        fill: #574ae801;
+                        stroke: #574ae8;
+                        stroke-width: 7;
+                        transition: fill 0.3s;
+                        cursor: pointer;
+                        margin-left: 1rem;
+                    }
+
+                    #icon.active {
+                        fill: #574ae8;
+                        animation: float ease-in-out 400ms;
+                    }
+
+                    #icon:hover {
+                        fill: #574ae8;
+                    }
+
+
+                    .date {
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 20px;
+                        color: $main-text-description;
+                    }
+
+                }
+
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    gap: .7rem;
+
+                    .title {
+                        font-size: 26px;
+                        font-weight: 400;
+                        line-height: 33px;
+                        color: $main-text-title;
+                    }
+
+                    .description {
+                        font-size: 18px;
+                        font-weight: 400;
+                        color: $main-text-description;
+                    }
+                }
+            }
+        }
+
+    }
+}

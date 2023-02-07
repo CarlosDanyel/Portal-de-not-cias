@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Noticias/assets/scss/import/style.css" />
+    <title>Noticias | Diária</title>
+  </head>
+  <body>
+    <header>
+      <div class="display">
+        <div class="header__container">
+          <span>Codelândia</span>
+          <span>blog</span>
+        </div>
+        <div class="header__input">
+          <input
+            type="text"
+            id="title"
+            placeholder="Pesquisar no blog"
+            class="add-img"
+            autofocus
+          />
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="noticias">
+        <div class="display">
+          <ul id="paginaDeNoticias"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="../Noticias/assets/app/newsApi.js"></script>
+    <script src="../Noticias/assets/app/metodoForEach.js"></script>
+  </body>
+</html>
